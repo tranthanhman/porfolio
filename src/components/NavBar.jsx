@@ -55,7 +55,7 @@ const NavBar = () => {
                     {links.map((l, i) => (
                         <li key={l?.id}>
                             <Link to={l.link} smooth duration={500}>
-                                <span className='px-4 cursor-pointer capitalize py-6 text-4xl'>{l.name}</span>
+                                <span onClick={() => setIsShow(false)} className='px-4 cursor-pointer capitalize py-6 text-4xl'>{l.name}</span>
                             </Link>
                         </li>
                     ))}

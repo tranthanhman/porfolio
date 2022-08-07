@@ -1,6 +1,7 @@
 import React from 'react'
 import { HiOutlineChevronDown } from 'react-icons/hi'
 import Avatar from '../assets/avatar.jpg'
+import { Link } from "react-scroll";
 
 
 const Home = () => {
@@ -12,12 +13,10 @@ const Home = () => {
                     <p className='text-gray-500'>
                         I have 1 year of experience including 1+ years frontend (reactjs , vuejs) and 0.5 years backend (nest js), wishing to be a fullstack programm in 3 years
                     </p>
-                    <div className=''>
-                        <button className='flex gap-2 items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg'>
-                            <span>Porfolio</span>
-                            <span><HiOutlineChevronDown size={16} /></span>
-                        </button>
-                    </div>
+                    <Link to='porfolio' smooth duration={500} className='inline-flex gap-2 items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg'>
+                        <span>Porfolio</span>
+                        <span><HiOutlineChevronDown size={16} /></span>
+                    </Link>
                 </div>
                 <div className='w-full pt-5 md:pt-0'>
                     <img src={Avatar} alt='' className='rounded-2xl mx-auto w-2/3 md:w-full h-[250px] object-cover sm:h-[400px]' />
